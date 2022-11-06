@@ -1,0 +1,29 @@
+{
+  "name": "mechtechdashboard",
+  "version": "1.0.0",
+  "description": "A FRC dashboard made from JS that is better to use (and look at) as well as supports the logger.",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FellStinger/MechTechDashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FellStinger/MechTechDashboard/issues"
+  },
+  "homepage": "https://github.com/FellStinger/MechTechDashboard#readme",
+  "dependencies": {
+    "@frc-web-components/frc-web-components": "^4.3.0-alpha.1",
+    "wpilib-nt-client": "^1.7.2"
+  },
+  "devDependencies": {
+    "electron": "^21.2.2",
+    "electron-packager": "^17.1.1"
+  }
+}

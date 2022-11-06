@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mech Tech Dashboard</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <script src="networktables/networktables.js"></script>
+        <script src="ui.js"></script>
+        
+        <script src="components/connection.js"></script>
+        <script src="components/gyro.js"></script>
+        <script src="components/tuning.js"></script>
+        <script src="components/autoselect.js"></script>
+        <script src="components/multicamera.js"></script>
+
+        <script src="../node_modules/@frc-web-components/frc-web-components/dist/frc-web-components.es.js"></script>
+        <script>
+            webbitStore.addSourceProvider('NetworkTables');
+            webbitStore.setDefaultSourceProvider('NetworkTables');
+        </script>
+    </body>
+</html>
