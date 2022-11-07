@@ -7,13 +7,37 @@
     </head>
 
     <body>
+        <div id="timer">2:15</div>
+        <header>
+            <!-- Tells whether or not the robot is connected -->
+            <div id="robot-state">Unknown state</div>
+            <button id="connect-button">Connect</button>
+        </header>
+
+        <!-- Where the camera goes -->
+        <div id="camera"></div>
+
+        <!-- Robot position on the field (given by odometry) -->
+        <div id="field"></div>
+
+        <!-- Gyro and other robot information will go here eventually (probably won't be div) -->
+        <div id="gyro"></div>
+
+        <!-- Auto selection screen -->
+        <div id="auto-select"></div>
+
+        <!-- Interface for connecting with robot -->
+        <div id="login">
+            <input id="connect-address" type="text" value="localhost" disabled>
+            <button id="connect" disabled>Connecting</button>
+        </div>
 
         <script src="networktables/networktables.js"></script>
         <script src="ui.js"></script>
         
         <script src="components/connection.js"></script>
         <script src="components/gyro.js"></script>
-        <script src="components/tuning.js"></script>
+        <script src="components/field.js"></script>
         <script src="components/autoselect.js"></script>
         <script src="components/multicamera.js"></script>
 
