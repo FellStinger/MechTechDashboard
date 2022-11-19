@@ -106,6 +106,7 @@ function createWindow() {
     mainWindow.loadURL(`file://${__dirname}/index.html`);
     mainWindow.once('ready-to-show', () => {
         console.log('Main windows is ready to be shown');
+        mainWindow.maximize();
         mainWindow.show();
     });
 

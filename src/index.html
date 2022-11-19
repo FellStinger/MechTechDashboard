@@ -7,6 +7,8 @@
     </head>
 
     <body>
+        <!-- Gyro and other robot information will go in loginterface.html -->
+
         <div id="timer">2:15</div>
         <header>
             <!-- Tells whether or not the robot is connected -->
@@ -20,9 +22,6 @@
         <!-- Robot position on the field (given by odometry) -->
         <div id="field"></div>
 
-        <!-- Gyro and other robot information will go here eventually (probably won't be div) -->
-        <div id="gyro"></div>
-
         <!-- Auto selection screen -->
         <div id="auto-select"></div>
 
@@ -30,6 +29,11 @@
         <div id="login">
             <input id="connect-address" type="text" value="localhost" disabled>
             <button id="connect" disabled>Connecting</button>
+        </div>
+
+        <!-- Button for opening log window -->
+        <div id="window-buttons">
+            <button id="log-button">Open Log Interface</button>
         </div>
 
         <script src="networktables/networktables.js"></script>
